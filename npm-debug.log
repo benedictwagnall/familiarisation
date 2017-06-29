@@ -1,38 +1,38 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/dls_sw/prod/tools/RHEL6-x86_64/node/0-12-4/prefix/bin/node',
 1 verbose cli   '/dls_sw/prod/tools/RHEL6-x86_64/defaults/bin/npm',
-1 verbose cli   'run',
-1 verbose cli   'compile' ]
+1 verbose cli   'start' ]
 2 info using npm@2.10.1
 3 info using node@v0.12.4
-4 verbose run-script [ 'precompile', 'compile', 'postcompile' ]
-5 info precompile fam@
-6 info compile fam@
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart fam@
+6 info start fam@
 7 verbose unsafe-perm in lifecycle true
-8 info fam@ Failed to exec compile script
-9 verbose stack Error: fam@ compile: `webpack`
-9 verbose stack Exit status 1
-9 verbose stack     at EventEmitter.<anonymous> (/dls_sw/prod/tools/RHEL6-x86_64/node/0-12-4/prefix/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
-9 verbose stack     at EventEmitter.emit (events.js:110:17)
-9 verbose stack     at ChildProcess.<anonymous> (/dls_sw/prod/tools/RHEL6-x86_64/node/0-12-4/prefix/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+8 info fam@ Failed to exec start script
+9 verbose stack Error: fam@ start: `server.js`
+9 verbose stack spawn ENOENT
+9 verbose stack     at ChildProcess.<anonymous> (/dls_sw/prod/tools/RHEL6-x86_64/node/0-12-4/prefix/lib/node_modules/npm/lib/utils/spawn.js:17:16)
 9 verbose stack     at ChildProcess.emit (events.js:110:17)
 9 verbose stack     at maybeClose (child_process.js:1015:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
 10 verbose pkgid fam@
 11 verbose cwd /home/lol95371/MyFirstReact/familiarisation
 12 error Linux 2.6.32-696.1.1.el6.x86_64
-13 error argv "/dls_sw/prod/tools/RHEL6-x86_64/node/0-12-4/prefix/bin/node" "/dls_sw/prod/tools/RHEL6-x86_64/defaults/bin/npm" "run" "compile"
+13 error argv "/dls_sw/prod/tools/RHEL6-x86_64/node/0-12-4/prefix/bin/node" "/dls_sw/prod/tools/RHEL6-x86_64/defaults/bin/npm" "start"
 14 error node v0.12.4
 15 error npm  v2.10.1
-16 error code ELIFECYCLE
-17 error fam@ compile: `webpack`
-17 error Exit status 1
-18 error Failed at the fam@ compile script 'webpack'.
-18 error This is most likely a problem with the fam package,
-18 error not with npm itself.
-18 error Tell the author that this fails on your system:
-18 error     webpack
-18 error You can get their info via:
-18 error     npm owner ls fam
-18 error There is likely additional logging output above.
-19 verbose exit [ 1, true ]
+16 error file sh
+17 error code ELIFECYCLE
+18 error errno ENOENT
+19 error syscall spawn
+20 error fam@ start: `server.js`
+20 error spawn ENOENT
+21 error Failed at the fam@ start script 'server.js'.
+21 error This is most likely a problem with the fam package,
+21 error not with npm itself.
+21 error Tell the author that this fails on your system:
+21 error     server.js
+21 error You can get their info via:
+21 error     npm owner ls fam
+21 error There is likely additional logging output above.
+22 verbose exit [ 1, true ]
