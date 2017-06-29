@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	ReactDOM.render (
 		React.createElement(Counter),
 		
-		document.getelementById('mount')
+		document.getElementById('mount')
 
 		);
 

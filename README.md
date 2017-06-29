@@ -1,5 +1,5 @@
 
-A simple webpage that counts the number of times that you press a button.
+A webpage that counts the number of times that you press a button, built with React js.
 
 This is a simple project with the purpose of familiarising myself with React. The idea is that this project will give me some experience with setting up and installing React, giving me a starting point for further experimentation.
 
@@ -12,16 +12,16 @@ Instructions:
 
 	npm start
 
-2. Use this command to setup npm
+2. Use this command to setup npm:
 
 	npm install
 
-3. Use this command to compile
+3. Use this command to compile:
 
 	npm run compile
 
-4. Access http://localhost:3000.
-
-
+4. Open a browser, access: 
+	
+	http://localhost:3000
 
 5. Press the button and (hopefully) watch the count increase.
