@@ -1,15 +1,16 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/dls_sw/prod/tools/RHEL6-x86_64/node/0-12-4/prefix/bin/node',
 1 verbose cli   '/dls_sw/prod/tools/RHEL6-x86_64/defaults/bin/npm',
-1 verbose cli   'start' ]
+1 verbose cli   'run',
+1 verbose cli   'compile' ]
 2 info using npm@2.10.1
 3 info using node@v0.12.4
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart familiarisation@1.0.0
-6 info start familiarisation@1.0.0
+4 verbose run-script [ 'precompile', 'compile', 'postcompile' ]
+5 info precompile fam@
+6 info compile fam@
 7 verbose unsafe-perm in lifecycle true
-8 info familiarisation@1.0.0 Failed to exec start script
-9 verbose stack Error: familiarisation@1.0.0 start: `node server.js`
+8 info fam@ Failed to exec compile script
+9 verbose stack Error: fam@ compile: `webpack`
 9 verbose stack Exit status 1
 9 verbose stack     at EventEmitter.<anonymous> (/dls_sw/prod/tools/RHEL6-x86_64/node/0-12-4/prefix/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
 9 verbose stack     at EventEmitter.emit (events.js:110:17)
@@ -17,21 +18,21 @@
 9 verbose stack     at ChildProcess.emit (events.js:110:17)
 9 verbose stack     at maybeClose (child_process.js:1015:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
-10 verbose pkgid familiarisation@1.0.0
+10 verbose pkgid fam@
 11 verbose cwd /home/lol95371/MyFirstReact/familiarisation
 12 error Linux 2.6.32-696.1.1.el6.x86_64
-13 error argv "/dls_sw/prod/tools/RHEL6-x86_64/node/0-12-4/prefix/bin/node" "/dls_sw/prod/tools/RHEL6-x86_64/defaults/bin/npm" "start"
+13 error argv "/dls_sw/prod/tools/RHEL6-x86_64/node/0-12-4/prefix/bin/node" "/dls_sw/prod/tools/RHEL6-x86_64/defaults/bin/npm" "run" "compile"
 14 error node v0.12.4
 15 error npm  v2.10.1
 16 error code ELIFECYCLE
-17 error familiarisation@1.0.0 start: `node server.js`
+17 error fam@ compile: `webpack`
 17 error Exit status 1
-18 error Failed at the familiarisation@1.0.0 start script 'node server.js'.
-18 error This is most likely a problem with the familiarisation package,
+18 error Failed at the fam@ compile script 'webpack'.
+18 error This is most likely a problem with the fam package,
 18 error not with npm itself.
 18 error Tell the author that this fails on your system:
-18 error     node server.js
+18 error     webpack
 18 error You can get their info via:
-18 error     npm owner ls familiarisation
+18 error     npm owner ls fam
 18 error There is likely additional logging output above.
 19 verbose exit [ 1, true ]

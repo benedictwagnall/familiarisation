@@ -1,13 +1,13 @@
-const path = require ('path);
+const path = require ('path');
 module.exports = {
 
-	context: path.join(home/lol95371/MyFirstReact/familiarisation/src, 'src')
+	context: path.join(home/lol95371/MyFirstReact/familiarisation/src, 'src'),
 		entry: [
 			'./main.js' ,
 			],
 		output: {
 
-	path:    path.join(home/lol95371/MyFirstReact/familiarisation,'www'),
+	path: path.join(home/lol95371/MyFirstReact/familiarisation,'www'),
 		filename: 'bundle.js',
 },
 
@@ -25,7 +25,7 @@ module: {
 
 resolve: {
 	modules: [
-		path.join(home/lol95371/familiarisation, 'node_modules'),
+		path.join(home/lol95371, 'node_modules'),
 		 ],
 	 },
 };
